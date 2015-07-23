@@ -1,0 +1,183 @@
+<!--
+
+  To build:
+
+  PATH should look like:
+  %SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\nodejs;C:\Users\Andrew\AppData\Roaming\npm;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Users\Andrew\Downloads\apache-ant-1.9.4-bin\apache-ant-1.9.4\bin;
+
+  Run:
+
+  C:\Users\Andrew\Documents\Programming\Hearthstat\platforms> cordova build android
+
+  The right APK is:
+  C:\Users\Andrew\Documents\Programming\Hearthstat\platforms\android\ant-build\Hearthstat-debug.apk
+
+-->
+
+<html>
+<head>
+  <title>Title</title>
+
+  <style type="text/css">
+    .body {
+      margin: 0;
+    }
+
+    .phoneScreen.pcVersion {
+      /* width: 540px;
+      height: 960px; */
+      height: 270px;
+      width: 480px;
+      display: inline-block;
+    }
+
+    .phoneScreen {
+      background-color: black;
+      color: white;
+      font-family: courier;
+      font-size: 10pt;
+      height: 100%;
+      position: relative;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
+    .inputBlocker {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      display: none;
+      z-index: 100;
+    }
+
+    .inputBlockerActive {
+      display: block;
+    }
+
+    .console {
+      display: none; /*inline-block;*/
+    }
+
+    .println {
+      background-color: #000099;
+      font-family: courier;
+      color: white;
+    }
+
+    .blackBackground {
+      background-color: black;
+    }
+
+    .blueBackground {
+      background-color: blue;
+    }
+
+    .greenBackground {
+      background-color: green;
+    }
+
+    .magentaBackground {
+      background-color: magenta;
+    }
+
+    .redBackground {
+      background-color: red;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+
+    .button {
+      border: 1px;
+      border-color: white;
+      border-style: solid;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .fullWidth {
+      width: 100%;
+    }
+
+    .fullHeight {
+      height: 100%;
+    }
+
+    .halfWidth {
+      width: 50%;
+    }
+
+    .halfHeight {
+      height: 50%;
+    }
+
+    .button.fullWidth {
+      width: calc(100% - 20px);
+    }
+
+    .button.halfWidth {
+      width: calc(50% - 20px);
+    }
+
+    .button.fullHeight {
+      height: calc(100% - 20px);
+    }
+
+    .button.halfHeight {
+      height: calc(50% - 20px);
+    }
+
+    .inlineBlock {
+      display: inline-block;
+    }
+
+    .gridbutton {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .buttongrid {
+      margin: 5px;
+    }
+
+    .buttongrid.fullWidth {
+      width: calc(100% - 10px);
+    }
+
+    .buttongrid.halfWidth {
+      width: calc(50% - 10px);
+    }
+
+    .buttongrid.fullHeight {
+      height: calc(100% - 10px);
+    }
+
+    .buttongrid.halfHeight {
+      height: calc(50% - 10px);
+    }
+
+
+  </style>
+</head>
+<body class="body">
+
+  <div class="inputBlocker">
+  </div>
+  <div class="phoneScreen">
+  </div>
+
+  <div class="console">
+  </div>
+  <script>
+    var el = document.getElementsByClassName('console')[0];
+    //el.innerHTML = "success!";
+  </script>
+  <script src="util.js"></script>
+  <script src="savestate.js"></script>
+  <script src="graphics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
